@@ -14,7 +14,7 @@ from difflib import get_close_matches
 def load_database():
     csv_file = "database.csv"  # ชื่อไฟล์ฐานข้อมูล
     df = pd.read_csv(csv_file, encoding='utf-8')
-    df['ชื่อ'] = df['ชื่อ'].str.strip()  # ลบช่องว่างในชื่อ
+    df['ชื่อ'] = df['ชื่อ'].str.strip()  # ลบช่องว่างในชื่อ 
     return df
 
 # หัวข้อในหน้า Streamlit
